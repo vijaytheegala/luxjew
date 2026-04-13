@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection | LuxJewel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+</head>
+<body>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    
+    <div class="custom-cursor"></div>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="LuxJewel"></a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <header style="padding-top: 120px; text-align: center; margin-bottom: 40px;">
+            <div class="section-title">
+                <h2>Our Collection</h2>
+                <p style="color: var(--text-gray); font-size: 0.8rem; letter-spacing: 2px;">DISCOVER THE FINEST JEWELRY</p>
+                <div class="divider"></div>
+            </div>
+        </header>
+
+        <section id="all-products">
+            <div class="product-grid">
+                <!-- Item 1 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=600&auto=format&fit=crop" alt="Rings" class="product-img"></div>
+                    <div class="product-info"><h3>Diamond Solitaire</h3><p class="product-price">₹11,999</p><button class="buy-btn" onclick="buyNow('Diamond Solitaire')">Buy Now</button></div>
+                </div>
+                <!-- Item 2 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=600&auto=format&fit=crop" alt="Necklaces" class="product-img"></div>
+                    <div class="product-info"><h3>Classic Gold Chain</h3><p class="product-price">₹5,499</p><button class="buy-btn" onclick="buyNow('Classic Gold Chain')">Buy Now</button></div>
+                </div>
+                <!-- Item 3 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1617041352433-87f54c9da4bc?q=80&w=600&auto=format&fit=crop" alt="Watches" class="product-img"></div>
+                    <div class="product-info"><h3>Elite Gold Watch</h3><p class="product-price">₹9,999</p><button class="buy-btn" onclick="buyNow('Elite Gold Watch')">Buy Now</button></div>
+                </div>
+                <!-- Item 4 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=600&auto=format&fit=crop" alt="Earrings" class="product-img"></div>
+                    <div class="product-info"><h3>Diamond Studs</h3><p class="product-price">₹3,299</p><button class="buy-btn" onclick="buyNow('Diamond Studs')">Buy Now</button></div>
+                </div>
+                <!-- Item 5 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=600&auto=format&fit=crop" alt="Bracelet" class="product-img"></div>
+                    <div class="product-info"><h3>Rose Gold Bracelet</h3><p class="product-price">₹1,999</p><button class="buy-btn" onclick="buyNow('Rose Gold Bracelet')">Buy Now</button></div>
+                </div>
+                <!-- Item 6 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?q=80&w=600&auto=format&fit=crop" alt="Pendant" class="product-img"></div>
+                    <div class="product-info"><h3>Pearl Pendant</h3><p class="product-price">₹599</p><button class="buy-btn" onclick="buyNow('Pearl Pendant')">Buy Now</button></div>
+                </div>
+                <!-- Item 7 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Sapphire Earrings</h3><p class="product-price">₹4,599</p><button class="buy-btn" onclick="buyNow('Sapphire Earrings')">Buy Now</button></div>
+                </div>
+                <!-- Item 8 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1603561591411-071c4f723938?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Emerald Ring</h3><p class="product-price">₹7,899</p><button class="buy-btn" onclick="buyNow('Emerald Ring')">Buy Now</button></div>
+                </div>
+                <!-- Item 9 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Ruby Necklace</h3><p class="product-price">₹10,499</p><button class="buy-btn" onclick="buyNow('Ruby Necklace')">Buy Now</button></div>
+                </div>
+                <!-- Item 10 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1598561062237-9444844aa1fc?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Platinum Band</h3><p class="product-price">₹6,299</p><button class="buy-btn" onclick="buyNow('Platinum Band')">Buy Now</button></div>
+                </div>
+                <!-- Item 11 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Silver Anklet</h3><p class="product-price">₹899</p><button class="buy-btn" onclick="buyNow('Silver Anklet')">Buy Now</button></div>
+                </div>
+                <!-- Item 12 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1599643477877-537ef527b4d4?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Gold Bangle</h3><p class="product-price">₹3,499</p><button class="buy-btn" onclick="buyNow('Gold Bangle')">Buy Now</button></div>
+                </div>
+                <!-- Item 13 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Diamond Nose Pin</h3><p class="product-price">₹1,299</p><button class="buy-btn" onclick="buyNow('Diamond Nose Pin')">Buy Now</button></div>
+                </div>
+                <!-- Item 14 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1599643477877-537ef527b4d4?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Choker Necklace</h3><p class="product-price">₹9,199</p><button class="buy-btn" onclick="buyNow('Choker Necklace')">Buy Now</button></div>
+                </div>
+                <!-- Item 15 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Bridal Set</h3><p class="product-price">₹11,999</p><button class="buy-btn" onclick="buyNow('Bridal Set')">Buy Now</button></div>
+                </div>
+                <!-- Item 16 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1603561591411-071c4f723938?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Men's Gold Ring</h3><p class="product-price">₹5,999</p><button class="buy-btn" onclick="buyNow('Men\'s Gold Ring')">Buy Now</button></div>
+                </div>
+                <!-- Item 17 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Elegant Cufflinks</h3><p class="product-price">₹2,599</p><button class="buy-btn" onclick="buyNow('Elegant Cufflinks')">Buy Now</button></div>
+                </div>
+                <!-- Item 18 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Vintage Brooch</h3><p class="product-price">₹1,499</p><button class="buy-btn" onclick="buyNow('Vintage Brooch')">Buy Now</button></div>
+                </div>
+                <!-- Item 19 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Tennis Bracelet</h3><p class="product-price">₹8,799</p><button class="buy-btn" onclick="buyNow('Tennis Bracelet')">Buy Now</button></div>
+                </div>
+                <!-- Item 20 -->
+                <div class="product-card reveal-item">
+                    <span class="sparkle sparkle-1"></span><span class="sparkle sparkle-2"></span><span class="sparkle sparkle-3"></span>
+                    <div class="product-img-wrapper"><img src="https://images.unsplash.com/photo-1617041352433-87f54c9da4bc?q=80&w=600&auto=format&fit=crop" alt="Jewelry" class="product-img"></div>
+                    <div class="product-info"><h3>Designer Watch</h3><p class="product-price">₹11,499</p><button class="buy-btn" onclick="buyNow('Designer Watch')">Buy Now</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/logo.png" alt="LuxJewel">
+        </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="copyright">&copy; 2026 LuxJewel. Professional Jewelry Handcrafted with Love.</p>
+        <p class="developer-credit" style="font-size: 0.6rem; color: #555; margin-top: 10px; letter-spacing: 1px;">Designed and developed by Vijay Kumar Theegala</p>
+    </footer>
+
+    <div class="floating-wa" onclick="buyNow('Inquiry')">
+        <div class="wa-badge">Hi!</div>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
