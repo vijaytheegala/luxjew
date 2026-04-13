@@ -83,18 +83,7 @@ body:hover .custom-cursor {
     box-sizing: border-box;
 }
 
-/* --- ACCENT LINES --- */
-.accent-line {
-    position: fixed;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background: rgba(212, 175, 55, 0.05); /* very subtle gold line */
-    z-index: -1;
-    pointer-events: none;
-}
-.line-left { left: 15%; }
-.line-right { right: 15%; }
+/* --- ACCENT LINES REMOVED --- */
 
 body {
     background-color: var(--bg-black);
@@ -207,14 +196,16 @@ nav.nav-scrolled .logo img {
 }
 
 .hero {
-    height: 60vh; /* Reduced height */
+    height: 60vh;
     width: 100%;
+    max-width: 100% !important; /* Override section max-width */
+    margin: 0;
+    padding: 0 !important; /* Edge to edge for canvas */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-bottom: 10px; /* Significantly reduced margin */
 }
 
 #three-canvas {
@@ -467,17 +458,6 @@ section {
     gap: 80px;
     align-items: center;
     position: relative;
-}
-
-/* Decorative Vertical Line */
-.story-section::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent, var(--border-gold), transparent);
 }
 
 .story-img-container {

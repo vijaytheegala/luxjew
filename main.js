@@ -163,7 +163,7 @@ const initParticles = () => {
 
     const init = () => {
         particles = [];
-        for (let i = 0; i < 150; i++) {
+        for (let i = 0; i < 300; i++) {
             particles.push(new Particle());
         }
     };
